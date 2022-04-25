@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Simple</string>
+    <string name="title_home">Alarmas</string>
+    <string name="title_dashboard">Notas</string>
+    <string name="title_notifications">Control</string>
+    <string name="extended_fab_label">Add</string>
+    <string name="action_share">Share</string>
+    <string name="action_upload">Upload</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_print">Print</string>
+
+
+    <string name="create_new_note">Create New Note</string>
+    <string name="show_all_notes">Show All Notes</string>
+    <string name="just_a_tree">just a tree</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="edit_notes_here">edit notes here</string>
+    <string name="save">Save</string>
+    <string name="make_some_notes">make some notes</string>
+    <string name="notes">Notes</string>
+    <string name="note_maker">Note Maker</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="activity_title_home">Notes</string>
+    <string name="msg_no_notes">No notes found!</string>
+    <string name="lbl_new_note_title">New Note</string>
+    <string name="lbl_edit_note_title">Edit Note</string>
+    <string name="hint_enter_note">Enter your note!</string>
+    <string name="nota">Nota</string>
+    <string name="title_activity_config_inicial">ConfigInicial</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

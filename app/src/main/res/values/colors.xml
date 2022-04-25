@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#c38f00</color>
+    <color name="purple_500">#FBBF08</color>
+    <color name="purple_700">#c38f00</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#CDCACA</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#ff79b0</color>
+    <color name="yellow">#FBBF08</color>
+    <color name="ColorActionBarTitle">#000000</color>
+    <color name="colorGray">#747474</color>
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+
+    <color name="colorTransparent">#00ffffff</color>
+
+
+    <color name="colorSecundario">#5737d6</color>
+    <color name="startColor">#FF3C83</color>
+    <color name="centerColor">#FED54A</color>
+    <color name="endColor">#5737D6</color>
+
+
+    <color name="msg_no_notes">#999</color>
+    <color name="hint_enter_note">#89c3c3c3</color>
+    <color name="timestamp">#858585</color>
+    <color name="note_list_text">#232323</color>
+
+
+    <color name="fondo_pantalla">#FFFFFF</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>

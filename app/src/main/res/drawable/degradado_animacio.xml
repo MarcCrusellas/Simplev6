@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:duration="500"
+        android:drawable="@drawable/degradado"/>
+
+    <item android:duration="500"
+        android:drawable="@drawable/degradado_center"/>
+
+    <item android:duration="500"
+        android:drawable="@drawable/degradado_end"/>
+
+</animation-list>
