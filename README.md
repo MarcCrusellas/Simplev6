@@ -1,4 +1,4 @@
-# ***Simplev6***
+# ***Simplev1***
 En este sitio va haber el proceso explicado de cada version del diseño creado, cualquier tipo de cambio se agregara cada sprint.
 # Apartados
 Para tener una idea base y poder empezar a desarrollar la parte de diseño hice un mockups, el programa que se utilizo fue moqups.
@@ -52,7 +52,9 @@ Ya tenemos un codigo encontrado para poder agregar el google maps pero todavia s
 
 ![Captura de pantalla a 2022-03-31 16-37-37](https://user-images.githubusercontent.com/95090891/161082524-7fdeb2c8-3bd0-4fe5-a138-f719fd138f72.png)
 
+# ***Simplev4***
 # Control Parental
+
 Tenemos dos apartados en los que estaran los apartados de direcciones de google y contactos de emergencia en los cuales se guardaran contactos 
 
 ![image](https://user-images.githubusercontent.com/102673066/166142746-f27e5879-027c-4804-b5e2-327f7c9d7198.png)
