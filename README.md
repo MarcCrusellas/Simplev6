@@ -48,6 +48,8 @@ En este apartado ya se ha podido agregar la base de datos de la aplicación.
 ![Captura de pantalla a 2022-03-31 16-37-37](https://user-images.githubusercontent.com/95090891/161082524-7fdeb2c8-3bd0-4fe5-a138-f719fd138f72.png)
 
 # Control Parental
+Tenemos dos apartados en los que estaran los apartados de direcciones de google y contactos de emergencia en los cuales se guardaran contactos 
+
 ![image](https://user-images.githubusercontent.com/102673066/166142746-f27e5879-027c-4804-b5e2-327f7c9d7198.png)
 
 # Mapa
