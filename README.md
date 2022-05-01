@@ -59,6 +59,10 @@ Tenemos dos apartados en los que estaran los apartados de direcciones de google 
 
 ![image](https://user-images.githubusercontent.com/102673066/166142746-f27e5879-027c-4804-b5e2-327f7c9d7198.png)
 
+# Mapa
+En este apartado se recreó un google maps con geolocalizador incluido donde puedes poner una ubicación fija de tu vivienda, en caso de que la persona se pierda le da donde sale el logo de ubicación y saldra una opcion abajo a la derecha de redirigir a google maps con la ruta de su vivienda directamente, donde ya le saldrá todas las formas de llegar a su propiedad.
 
+![Screenshot_20220429-160718_Mapa](https://user-images.githubusercontent.com/95090891/166143274-1dba37c8-7452-4ec3-bb6b-55a802aa9ef1.png)
 
+![Screenshot_20220429-160701_Maps](https://user-images.githubusercontent.com/95090891/166143279-a44b6d67-a149-4393-9b9a-7872939f48f6.png)
 
