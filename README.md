@@ -45,6 +45,11 @@ En este apartado ya se esta intentando agregar la base de datos de la aplicació
 # Notas
 En este apartado ya se ha podido agregar la base de datos de la aplicación.
 
+# Mapa
+Ya tenemos un codigo encontrado para poder agregar el google maps pero todavia seguimos avanzando en otros apartados.
+
+![Captura de pantalla a 2022-03-31 16-44-53](https://user-images.githubusercontent.com/95090891/161083119-fe414669-d738-406c-8c96-3423f11852c0.png)
+
 ![Captura de pantalla a 2022-03-31 16-37-37](https://user-images.githubusercontent.com/95090891/161082524-7fdeb2c8-3bd0-4fe5-a138-f719fd138f72.png)
 
 # Control Parental
