@@ -57,9 +57,6 @@ Tenemos dos apartados en los que estaran los apartados de direcciones de google 
 
 ![image](https://user-images.githubusercontent.com/102673066/166142746-f27e5879-027c-4804-b5e2-327f7c9d7198.png)
 
-# Mapa
-Ya tenemos un codigo encontrado para poder agregar el google maps pero todavia seguimos avanzando en otros apartados.
 
-![Captura de pantalla a 2022-03-31 16-44-53](https://user-images.githubusercontent.com/95090891/161083119-fe414669-d738-406c-8c96-3423f11852c0.png)
 
 
