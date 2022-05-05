@@ -14,13 +14,29 @@ El logo fue buscado por medio de un creador de logos de la pagina llamada hatchf
 
 ![Captura de pantalla de 2022-03-23 23-34-28](https://user-images.githubusercontent.com/71900639/159809976-41cb2b1c-f25e-4e44-bab5-b6030de85eab.png)
 
-### Diseño versión Light
-Aun no esta del todo implementado.
-![Screenshot_20220324_000120_com nouro simplev4](https://user-images.githubusercontent.com/71900639/159810546-02bd37d2-b389-4551-a1ee-7dfc9c0aed37.jpg)
+## Diseño versión Light
+# Apartado alarmas
+![Screenshot_20220505_211810_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167031107-69adb4b8-3530-4713-9355-cd36e072d3bd.jpg)
 
-### Diseño versión Night
+# Apartado Notas
+![Screenshot_20220505_211814_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167031133-b60385bf-f513-4bf7-bec2-bf76208a889d.jpg)
+
+# Aprtado Telefono
+![Screenshot_20220505_211829_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167030825-33a5c84c-6806-427d-a59d-f02d42b8cb6f.jpg)
+
+## Diseño versión Night
+
+
 Este en el diseño que tenemos para el modo nocturno, El cual se adapara en conjunto con el modo nocturno del mobil
-![Screenshot_20220324_000134_com nouro simplev4](https://user-images.githubusercontent.com/71900639/159810573-45ed76ee-a953-49a5-b10c-56a7430d21a7.jpg)
+
+# Apartado alarmas
+![Screenshot_20220505_211747_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167031148-d076654f-82c9-4fc1-a32e-94a16cfb497a.jpg)
+
+# Apartado Notas
+![Screenshot_20220505_211751_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167031159-183bc91d-78ce-43b5-8592-ce062b03ac8a.jpg)
+
+# Aprtado Telefono
+![Screenshot_20220505_211755_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167031223-4930f406-47a6-4b7f-bfc3-81d1952de53f.jpg)
 
 # ***Simplev3***
 En este apartado quise ya empezar hacer el diseño base verdadero que se utilizara en la aplicación, este diseño se agregaria entre el sprint 4 y 5.
@@ -65,4 +81,5 @@ En este apartado se recreó un google maps con geolocalizador incluido donde pue
 ![Screenshot_20220429-160718_Mapa](https://user-images.githubusercontent.com/95090891/166143274-1dba37c8-7452-4ec3-bb6b-55a802aa9ef1.png)
 
 ![Screenshot_20220429-160701_Maps](https://user-images.githubusercontent.com/95090891/166143279-a44b6d67-a149-4393-9b9a-7872939f48f6.png)
+
 
