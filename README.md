@@ -1,4 +1,4 @@
-# ***Simplev6***
+# ***Simplev1***
 En este sitio va haber el proceso explicado de cada version del diseño creado, cualquier tipo de cambio se agregara cada sprint.
 # Apartados
 Para tener una idea base y poder empezar a desarrollar la parte de diseño hice un mockups, el programa que se utilizo fue moqups.
@@ -45,13 +45,24 @@ En este apartado ya se esta intentando agregar la base de datos de la aplicació
 # Notas
 En este apartado ya se ha podido agregar la base de datos de la aplicación.
 
-![Captura de pantalla a 2022-03-31 16-37-37](https://user-images.githubusercontent.com/95090891/161082524-7fdeb2c8-3bd0-4fe5-a138-f719fd138f72.png)
-
-# Control Parental
-![Captura de pantalla a 2022-03-31 16-42-59](https://user-images.githubusercontent.com/95090891/161082718-81079678-b8e2-4f40-a1d4-241715be548d.png)
 # Mapa
 Ya tenemos un codigo encontrado para poder agregar el google maps pero todavia seguimos avanzando en otros apartados.
 
 ![Captura de pantalla a 2022-03-31 16-44-53](https://user-images.githubusercontent.com/95090891/161083119-fe414669-d738-406c-8c96-3423f11852c0.png)
 
+![Captura de pantalla a 2022-03-31 16-37-37](https://user-images.githubusercontent.com/95090891/161082524-7fdeb2c8-3bd0-4fe5-a138-f719fd138f72.png)
+
+# ***Simplev4***
+# Control Parental
+
+Tenemos dos apartados en los que estaran los apartados de direcciones de google y contactos de emergencia en los cuales se guardaran contactos 
+
+![image](https://user-images.githubusercontent.com/102673066/166142746-f27e5879-027c-4804-b5e2-327f7c9d7198.png)
+
+# Mapa
+En este apartado se recreó un google maps con geolocalizador incluido donde puedes poner una ubicación fija de tu vivienda, en caso de que la persona se pierda le da donde sale el logo de ubicación y saldra una opcion abajo a la derecha de redirigir a google maps con la ruta de su vivienda directamente, donde ya le saldrá todas las formas de llegar a su propiedad.
+
+![Screenshot_20220429-160718_Mapa](https://user-images.githubusercontent.com/95090891/166143274-1dba37c8-7452-4ec3-bb6b-55a802aa9ef1.png)
+
+![Screenshot_20220429-160701_Maps](https://user-images.githubusercontent.com/95090891/166143279-a44b6d67-a149-4393-9b9a-7872939f48f6.png)
 
