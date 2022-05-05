@@ -1,6 +1,9 @@
 package com.neuro.simplev6;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
+import android.os.PowerManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -13,9 +16,10 @@ import androidx.navigation.ui.NavigationUI;
 import com.neuro.simplev6.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-
+    protected PowerManager.WakeLock wakelock;
     private ActivityMainBinding binding;
 
+    @SuppressLint("InvalidWakeLockTag")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +37,24 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
+//evitar que la pantalla se apague
+        final PowerManager pm=(PowerManager)getSystemService(Context.POWER_SERVICE);
+        this.wakelock= pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "etiqueta");
+        wakelock.acquire();
 
     }
+    /*Esto, junto con el onDestroy, hacen que la pantalla siga encendida hasta que la actividad termine*/
+    protected void onDestroy(){
+        super.onDestroy();
 
+        this.wakelock.release();
+    }
+    protected void onResume(){
+        super.onResume();
+        wakelock.acquire();
+    }
+    public void onSaveInstanceState(Bundle icicle) {
+        super.onSaveInstanceState(icicle);
+        this.wakelock.release();
+    }
 }

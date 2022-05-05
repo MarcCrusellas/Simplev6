@@ -16,6 +16,9 @@ public class NotificationMessage extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_message);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         textView = findViewById(R.id.tv_message);
         bundle = getIntent().getExtras();
         textView.setText(bundle.getString("message"));

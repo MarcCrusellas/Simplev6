@@ -94,10 +94,11 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        android:gravity="center">
+        android:gravity="left">
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardView3"
-            android:layout_width="183dp"
+            android:layout_width="136dp"
             android:layout_height="247dp"
             app:cardBackgroundColor="@color/light_blue_900"
             app:cardCornerRadius="20dp"
@@ -108,14 +109,16 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView"
             tools:layout_editor_absoluteX="16dp">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/img3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="top|center"
                 android:layout_margin="10dp"
+
+                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_baseline_change_circle_24" />
+                android:src="@drawable/ic_baseline_change_circle_24_2"/>
 
             <TextView
                 android:id="@+id/txttelmergencia"
@@ -131,6 +134,29 @@
 
 
         </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView4"
+            android:layout_width="wrap_content"
+            android:layout_height="247dp"
+            app:cardBackgroundColor="@color/light_blue_900"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            tools:layout_editor_absoluteX="16dp"
+            android:padding="20dp">
+            <ListView
+                android:id="@+id/listViewcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/white"/>
 
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
