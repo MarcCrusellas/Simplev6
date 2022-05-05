@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "701438210286",
+    "project_id": "simplev6-37087",
+    "storage_bucket": "simplev6-37087.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701438210286:android:3c10f966c8257cbe6c43ff",
+        "android_client_info": {
+          "package_name": "com.neuro.simplev6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701438210286-42ddapipf2it10ohe13tnh91c01e4cet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfqGuNvbxhDS7NAQ63uoA6HMCb8y3dZR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701438210286-42ddapipf2it10ohe13tnh91c01e4cet.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

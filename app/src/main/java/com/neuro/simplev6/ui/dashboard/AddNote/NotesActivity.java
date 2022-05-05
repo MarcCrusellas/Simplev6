@@ -1,8 +1,6 @@
 package com.neuro.simplev6.ui.dashboard.AddNote;
 
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,20 +8,18 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toolbar;
 
-import com.google.android.material.textfield.TextInputLayout;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.neuro.simplev6.R;
 import com.neuro.simplev6.ui.dashboard.DashboardFragment;
-
 
 import java.util.HashSet;
 
 public class NotesActivity extends AppCompatActivity {
-    private TextInputLayout inputLayoutName;
 
 
     int noteId;
@@ -36,13 +32,7 @@ public class NotesActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
         ImageView imageView = findViewById(R.id.cancel);
-        imageView.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        imageView.setOnClickListener(view -> finish());
 
         Toolbar toolbar = findViewById(R.id.toolbar);
 
@@ -53,11 +43,9 @@ public class NotesActivity extends AppCompatActivity {
         animationDrawable.start();
 
 // el que fa que el hint puji
-        inputLayoutName = (TextInputLayout) findViewById(R.id.input_layout_name);
 
 
-
-        EditText editText = (EditText)findViewById(R.id.edittext);
+        EditText editText = findViewById(R.id.edittext);
 
         Intent intent = getIntent();
         noteId = intent.getIntExtra("noteId", -1);

@@ -2,7 +2,7 @@
     <string name="app_name">Simple</string>
     <string name="title_home">Alarmas</string>
     <string name="title_dashboard">Notas</string>
-    <string name="title_notifications">Control</string>
+    <string name="title_notifications">Teléfono</string>
     <string name="extended_fab_label">Add</string>
     <string name="action_share">Share</string>
     <string name="action_upload">Upload</string>
@@ -32,4 +32,18 @@
     <string name="title_activity_config_inicial">ConfigInicial</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_maps">Maps</string>
+    <string name="emergencias_112">Emergencias 112</string>
+    <string name="policia">Policia</string>
+
+
 </resources>
