@@ -140,6 +140,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp"
+                android:fontFamily="@font/b022014t"
                 android:textStyle="bold" />
 
 

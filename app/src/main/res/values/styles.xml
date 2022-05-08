@@ -51,6 +51,12 @@
         <item name="android:background">?android:attr/colorBackground</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
-
-
+    <style name="MyAlertDialogTheme" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:textAppearanceSmall">@style/MyTextAppearance</item>
+        <item name="android:textAppearanceMedium">@style/MyTextAppearance</item>
+        <item name="android:textAppearanceLarge">@style/MyTextAppearance</item>
+    </style>
+    <style name="MyTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/b022014t</item>
+    </style>
 </resources>

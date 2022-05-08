@@ -2,35 +2,25 @@ package com.neuro.simplev6.ui.notifications;
 
 import static android.content.Context.MODE_PRIVATE;
 
-import android.Manifest;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.cardview.widget.CardView;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import com.neuro.simplev6.R;
 import com.neuro.simplev6.databinding.FragmentNotificationsBinding;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 
 public class NotificationsFragment extends Fragment {
@@ -133,7 +123,7 @@ public class NotificationsFragment extends Fragment {
             emergencias.setData(Uri.parse("tel:112"));
             startActivity(emergencias);
         } else if(i == 2){
-            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+            AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), R.style.MyAlertDialogTheme);
             builder.setTitle("A que Policia? (Preferiblemente emergencias)");
             builder.setNegativeButton("back",null);
 
@@ -165,6 +155,8 @@ public class NotificationsFragment extends Fragment {
             });
             AlertDialog dialog = builder.create();
             dialog.show();
+
+
         }
     }
 

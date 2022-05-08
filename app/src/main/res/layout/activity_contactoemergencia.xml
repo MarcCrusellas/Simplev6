@@ -64,6 +64,8 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:hint="Name"
+
+                android:fontFamily="@font/b022014t"
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,6 +87,8 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:hint="Teléfono"
+
+                android:fontFamily="@font/b022014t"
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
