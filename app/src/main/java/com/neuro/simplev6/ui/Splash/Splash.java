@@ -5,7 +5,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
@@ -15,7 +14,7 @@ import com.neuro.simplev6.MainActivity;
 import com.neuro.simplev6.R;
 
 
-public class Spash extends AppCompatActivity {
+public class Splash extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +42,7 @@ public class Spash extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                Intent intent2 = new Intent(Spash.this, MainActivity.class);
+                Intent intent2 = new Intent(Splash.this, MainActivity.class);
                 startActivity(intent2);
             }
         }, 1500);

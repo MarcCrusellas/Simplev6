@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -7,6 +8,7 @@
         <item name="android:colorBackground">@color/colorPrimaryDark</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
     <style name="ActionItem">
         <item name="android:textSize">@dimen/text_size</item>
         <item name="android:drawablePadding">@dimen/drawable_padding</item>
@@ -22,6 +24,7 @@
         <item name="android:colorBackground">@color/colorPrimaryDark</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
     <style name="Widget.Theme.Simplev6.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
         <item name="android:background">@color/black_overlay</item>
     </style>
@@ -31,6 +34,15 @@
         <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
     </style>
 
+    <style name="Widget.Simplev6.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Widget.Simplev6.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
 
 
 </resources>

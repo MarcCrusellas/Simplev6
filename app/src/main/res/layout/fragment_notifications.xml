@@ -5,18 +5,110 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.notifications.NotificationsFragment">
-
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+    <HorizontalScrollView
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/scrollView"
+        android:scrollbarThumbHorizontal="@drawable/custom_scroll_style"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:fadeScrollbars="true">
 
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView"
+                android:layout_width="183dp"
+                android:layout_height="247dp"
+                app:cardBackgroundColor="@color/light_blue_900"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="325dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|center"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_phone_forwarded_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/emergencias_112"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView2"
+                android:layout_width="183dp"
+                android:layout_height="247dp"
+                app:cardBackgroundColor="@color/light_blue_900"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                tools:layout_editor_absoluteX="229dp"
+                tools:layout_editor_absoluteY="16dp">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|center"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_local_police_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/policia"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </HorizontalScrollView>
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardView"
+            android:id="@+id/cardView5"
             android:layout_width="183dp"
             android:layout_height="247dp"
             app:cardBackgroundColor="@color/light_blue_900"
@@ -29,21 +121,22 @@
             tools:layout_editor_absoluteY="325dp">
 
             <ImageView
-                android:id="@+id/img"
+                android:id="@+id/img5"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="top|center"
                 android:layout_margin="10dp"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_baseline_phone_forwarded_24" />
+                android:src="@drawable/ic_baseline_contact_emergency_24" />
 
             <TextView
+                android:id="@+id/contactotext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center_horizontal"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:text="@string/emergencias_112"
+                android:text="Contacto"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp"
@@ -51,50 +144,14 @@
 
 
         </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardView2"
-            android:layout_width="183dp"
-            android:layout_height="247dp"
-            app:cardBackgroundColor="@color/light_blue_900"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="12dp"
-            app:cardPreventCornerOverlap="true"
-            app:cardUseCompatPadding="true"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="16dp">
-
-            <ImageView
-                android:id="@+id/img2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="top|center"
-                android:layout_margin="10dp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_baseline_local_police_24" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="@string/policia"
-                android:textColor="@color/colorPrimary"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-
-        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
-
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="left"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        android:gravity="left">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardView3"
@@ -118,7 +175,7 @@
 
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_baseline_change_circle_24_2"/>
+                android:src="@drawable/ic_baseline_change_circle_24_2" />
 
             <TextView
                 android:id="@+id/txttelmergencia"
@@ -134,10 +191,12 @@
 
 
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardView4"
             android:layout_width="wrap_content"
             android:layout_height="247dp"
+            android:padding="20dp"
             app:cardBackgroundColor="@color/light_blue_900"
             app:cardCornerRadius="5dp"
             app:cardElevation="10dp"
@@ -145,17 +204,17 @@
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true"
             app:layout_constraintTop_toBottomOf="@+id/cardView"
-            tools:layout_editor_absoluteX="16dp"
-            android:padding="20dp">
+            tools:layout_editor_absoluteX="16dp">
+
             <ListView
                 android:id="@+id/listViewcard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="5dp"
-                android:backgroundTint="@color/white"/>
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/white" />
 
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>

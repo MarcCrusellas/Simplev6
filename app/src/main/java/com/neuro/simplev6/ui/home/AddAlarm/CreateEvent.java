@@ -73,7 +73,7 @@ public class CreateEvent extends AppCompatActivity implements View.OnClickListen
         }else if (view == btn_done){
             submit();
         }else{
-            finish();
+            //
         }
     }
 
