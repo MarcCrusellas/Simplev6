@@ -14,38 +14,40 @@ El logo fue buscado por medio de un creador de logos de la pagina llamada hatchf
 
 ![Captura de pantalla de 2022-03-23 23-34-28](https://user-images.githubusercontent.com/71900639/159809976-41cb2b1c-f25e-4e44-bab5-b6030de85eab.png)
 
-## Diseño versión Light
-# Apartado alarmas
-![Screenshot_20220505_211810_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167031107-69adb4b8-3530-4713-9355-cd36e072d3bd.jpg)
+# Diseño versión Light
+## Apartado alarmas
+![Screenshot_20220505_211810_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167032922-7768f681-b0ab-4613-8ee3-697743abda2f.jpg)
 
-# Apartado Notas
-![Screenshot_20220505_211814_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167031133-b60385bf-f513-4bf7-bec2-bf76208a889d.jpg)
+## Apartado Notas
+![Screenshot_20220505_211814_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167032926-f76219ba-2655-413b-8536-db46d0610e2c.jpg)
 
-# Aprtado Telefono
-![Screenshot_20220505_211829_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167030825-33a5c84c-6806-427d-a59d-f02d42b8cb6f.jpg)
+## Aprtado Telefono
+![Screenshot_20220505_211829_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167032933-15f3946f-679c-4e78-8828-12832e64a2ec.jpg)
 
-## Diseño versión Night
+# Diseño versión Night
 
 
 Este en el diseño que tenemos para el modo nocturno, El cual se adapara en conjunto con el modo nocturno del mobil
 
-# Apartado alarmas
-![Screenshot_20220505_211747_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167031148-d076654f-82c9-4fc1-a32e-94a16cfb497a.jpg)
+## Apartado alarmas
 
-# Apartado Notas
-![Screenshot_20220505_211751_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167031159-183bc91d-78ce-43b5-8592-ce062b03ac8a.jpg)
+![Screenshot_20220505_211747_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167032824-6bab35c5-dd84-4ced-8347-f158d04b5afe.jpg)
 
-# Aprtado Telefono
-![Screenshot_20220505_211755_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167031223-4930f406-47a6-4b7f-bfc3-81d1952de53f.jpg)
+
+## Apartado Notas
+![Screenshot_20220505_211751_com neuro simplev6mini](https://user-images.githubusercontent.com/71900639/167032701-3b16176b-9ad7-4df4-84e1-f43742c420be.jpg)
+
+## Aprtado Telefono
+![Screenshot_20220505_211755_com neuro simplev6](https://user-images.githubusercontent.com/71900639/167033013-2c892af1-ff01-4acc-9434-0e36bce6bc5f.jpg)
 
 # ***Simplev3***
 En este apartado quise ya empezar hacer el diseño base verdadero que se utilizara en la aplicación, este diseño se agregaria entre el sprint 4 y 5.
 
-# Logo
+## Logo
 La app se le cambio el color entonces hemos tenido que cambiar el color del logo.
 ![logo_transparent](https://user-images.githubusercontent.com/95090891/161074122-50fb3fe9-ac8d-4278-8f7e-a7a8144ef811.png)
 
-# Portada 
+# Splash screen 
 Charlando con mi compañero me enseño un diseño de colores variados y me recordo a Instagram entonces quise hacer algo similar en base a los colores.
 
 ![Captura de pantalla a 2022-03-31 16-10-42](https://user-images.githubusercontent.com/95090891/161075680-9a1c291a-f2de-4c56-a17b-b647b2dfc4e6.png)
