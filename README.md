@@ -85,6 +85,13 @@ En este apartado se recreó un google maps con geolocalizador incluido donde pue
 
 # ***Explicación codigo6***
 # MainActivity
-este trojo de codigo es el
+este es el trozo de codigo es el encargado de configurar los distintos fragmentos que contine esta sección, si quisieramos crear otro solo tendriamos que 
 
 https://github.com/MarcCrusellas/Simplev6/blob/78a7aec93cc918d81f395a6a6230d3f63ac23af2/app/src/main/java/com/neuro/simplev6/MainActivity.java#L33-L39
+Si quisieramos crear otro fragmento solo tendriamosque poner:
+1. En MainActivity otro R.id."el nuevo fragmento" en esta linea
+  https://github.com/MarcCrusellas/Simplev6/blob/4c3306db124d1ec21daaa29a16374975ce6eefef/app/src/main/java/com/neuro/simplev6/MainActivity.java#L34
+2. En el mobile_navigation.xml poner otro fragment parecido a este, pero con el id y las otras caracteristicas modificadas, aunque lo segundo no es totalmente necesario:
+https://github.com/MarcCrusellas/Simplev6/blob/4c3306db124d1ec21daaa29a16374975ce6eefef/app/src/main/res/navigation/mobile_navigation.xml#L20-L24
+3. I por ultimo en bottom_nav_menu.xml poner un item mas para que se vea en el Bottom Navigation Drawer. Como este:
+https://github.com/MarcCrusellas/Simplev6/blob/4c3306db124d1ec21daaa29a16374975ce6eefef/app/src/main/res/menu/bottom_nav_menu.xml#L14-L17
