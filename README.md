@@ -124,7 +124,13 @@ Estas lineas creaan un AlertDialog, que se encarga de hacer salir una pantalla e
 
 Este trozo de codigo se encarga de hacer un Intent a una nueva activity, donde podemos crear la nota. 
 https://github.com/MarcCrusellas/Simplev6/blob/daead811c8dfe6a83a708c9d8b8b366c21342681/app/src/main/java/com/neuro/simplev6/ui/dashboard/DashboardFragment.java#L100-L110
+### NotesActivity
+Esta activity esta relacionada con DashboardFragment, es la que se encarga de editar las notas creadas y de editar las antiguas.
 
+este trozo es usado para esconder el toolbar predefinido
+https://github.com/MarcCrusellas/Simplev6/blob/44148e7b05b09e8b58c103875e59df5fd6047f99/app/src/main/java/com/neuro/simplev6/ui/dashboard/AddNote/NotesActivity.java#L31-L33
+
+## NotificationsFragment
 
 
 
