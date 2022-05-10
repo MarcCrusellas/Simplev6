@@ -87,7 +87,7 @@ En este apartado se recreó un google maps con geolocalizador incluido donde pue
 ## MainActivity
 este es el trozo de codigo es el encargado de configurar los distintos fragmentos que contine esta sección, si quisieramos crear otro solo tendriamos que 
 
-https://github.com/MarcCrusellas/Simplev6/blob/78a7aec93cc918d81f395a6a6230d3f63ac23af2/app/src/main/java/com/neuro/simplev6/MainActivity.java#L33-L39
+https://github.com/MarcCrusellas/Simplev6/blob/78a7aec93cc918d81f395a6a6230d3f63ac23af2/app/src/main/java/com/neuro/simplev6/MainActivity.java#L33-L38
 
 Si quisieramos crear otro fragmento solo tendriamosque poner:
 1. En MainActivity otro R.id."el nuevo fragmento" en esta linea
