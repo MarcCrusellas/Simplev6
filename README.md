@@ -88,6 +88,7 @@ En este apartado se recreó un google maps con geolocalizador incluido donde pue
 este es el trozo de codigo es el encargado de configurar los distintos fragmentos que contine esta sección, si quisieramos crear otro solo tendriamos que 
 
 https://github.com/MarcCrusellas/Simplev6/blob/78a7aec93cc918d81f395a6a6230d3f63ac23af2/app/src/main/java/com/neuro/simplev6/MainActivity.java#L33-L39
+
 Si quisieramos crear otro fragmento solo tendriamosque poner:
 1. En MainActivity otro R.id."el nuevo fragmento" en esta linea
   https://github.com/MarcCrusellas/Simplev6/blob/4c3306db124d1ec21daaa29a16374975ce6eefef/app/src/main/java/com/neuro/simplev6/MainActivity.java#L34
@@ -95,3 +96,18 @@ Si quisieramos crear otro fragmento solo tendriamosque poner:
 https://github.com/MarcCrusellas/Simplev6/blob/4c3306db124d1ec21daaa29a16374975ce6eefef/app/src/main/res/navigation/mobile_navigation.xml#L20-L24
 3. I por ultimo en bottom_nav_menu.xml poner un item mas para que se vea en el Bottom Navigation Drawer. Como este:
 https://github.com/MarcCrusellas/Simplev6/blob/4c3306db124d1ec21daaa29a16374975ce6eefef/app/src/main/res/menu/bottom_nav_menu.xml#L14-L17
+
+# HomeFragment
+
+https://github.com/MarcCrusellas/Simplev6/blob/f37d8c936d0200085ff9fb7e02f5c57c7769a306/app/src/main/java/com/neuro/simplev6/ui/home/HomeFragment.java#L25
+Este es el fragment principal de la aplicacion, contine las alarmas programadas.
+https://github.com/MarcCrusellas/Simplev6/blob/f37d8c936d0200085ff9fb7e02f5c57c7769a306/app/src/main/java/com/neuro/simplev6/ui/home/HomeFragment.java#L33
+Si nos fujamos bien poder ver una linea de codigo que nos otorga la posivilidad de encontrar objetos sin tener que usar findViewbyid, es mas rapido y no gasta tanta memória.
+En el siguinte ejemplo podemos ver una ejemplo de uso de binding.
+https://github.com/MarcCrusellas/Simplev6/blob/f37d8c936d0200085ff9fb7e02f5c57c7769a306/app/src/main/java/com/neuro/simplev6/ui/home/HomeFragment.java#L42
+En el HomeFragment tabien podemos ver que la opcion de eliminar una alarma solo se puede usar para eliminar una alarma con el nombre test, ya que no pude implementar la opcion de getId en el EntityClass, y no huviese dado error, solo habri sido necesario poner otro Queri en el DAO y ya habriamos podido implementar esta opcion, sin embardo si se puede eliminar directamente toda la lista, con el boton naraja. 
+eso se hace en esta seccion de codigo.
+https://github.com/MarcCrusellas/Simplev6/blob/f37d8c936d0200085ff9fb7e02f5c57c7769a306/app/src/main/java/com/neuro/simplev6/ui/home/HomeFragment.java#L108-L111
+
+
+
