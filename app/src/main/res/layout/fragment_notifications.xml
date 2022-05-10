@@ -13,15 +13,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-    <HorizontalScrollView
-        android:layout_width="183dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/scrollView"
-        android:scrollbarThumbHorizontal="@drawable/custom_scroll_style"
-        android:scrollbarAlwaysDrawHorizontalTrack="false"
-        android:fadeScrollbars="true">
+        <HorizontalScrollView
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/scrollView"
+            android:scrollbarThumbHorizontal="@drawable/custom_scroll_style"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:fadeScrollbars="true"
+            android:layout_marginRight="3dp"
+
+            android:background="@drawable/fonsscrool">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -73,7 +76,7 @@
                 android:id="@+id/cardView2"
                 android:layout_width="183dp"
                 android:layout_height="247dp"
-                app:cardBackgroundColor="@color/light_blue_900"
+                app:cardBackgroundColor="#077EDC"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="12dp"
@@ -105,47 +108,108 @@
 
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
-
     </HorizontalScrollView>
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardView5"
+
+        <HorizontalScrollView
             android:layout_width="183dp"
-            android:layout_height="247dp"
-            app:cardBackgroundColor="@color/light_blue_900"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="12dp"
-            app:cardPreventCornerOverlap="true"
-            app:cardUseCompatPadding="true"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="325dp">
-
-            <ImageView
-                android:id="@+id/img5"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="top|center"
-                android:layout_margin="10dp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_baseline_contact_emergency_24" />
-
-            <TextView
-                android:id="@+id/contactotext"
-                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2"
+            android:scrollbarThumbHorizontal="@drawable/custom_scroll_style"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:fadeScrollbars="true"
+            tools:ignore="ScrollViewCount"
+            android:background="@drawable/fonsscrool">
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="Contacto"
-                android:textAlignment="center"
-                android:textColor="@color/colorPrimary"
-                android:textSize="20sp"
-                android:fontFamily="@font/b022014t"
-                android:textStyle="bold" />
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView5"
+                android:layout_width="183dp"
+                android:layout_height="247dp"
+                app:cardBackgroundColor="@color/light_blue_900"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="325dp">
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|center"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_contact_emergency_24" />
+
+                <TextView
+                    android:id="@+id/contactotext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Contacto"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/b022014t"
+                    android:textStyle="bold" />
 
 
-        </com.google.android.material.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView6"
+                android:layout_width="183dp"
+                android:layout_height="247dp"
+                app:cardBackgroundColor="#077EDC"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="325dp">
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|center"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_contact_emergency_24" />
+
+                <TextView
+                    android:id="@+id/contactotext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Contacto"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/b022014t"
+                    android:textStyle="bold" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </HorizontalScrollView>
     </LinearLayout>
+
+
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"

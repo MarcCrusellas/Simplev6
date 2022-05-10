@@ -1,4 +1,4 @@
-package com.neuro.simplev6.ui.notifications;
+package com.neuro.simplev6.ui.notifications.emergencia;
 
 import static com.neuro.simplev6.ui.notifications.NotificationsFragment.contact;
 
