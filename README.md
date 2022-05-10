@@ -83,8 +83,8 @@ En este apartado se recreó un google maps con geolocalizador incluido donde pue
 ![Screenshot_20220429-160701_Maps](https://user-images.githubusercontent.com/95090891/166143279-a44b6d67-a149-4393-9b9a-7872939f48f6.png)
 
 
-# ***Explicación codigo6***
-# MainActivity
+# ***Explicación codigo***
+## MainActivity
 este es el trozo de codigo es el encargado de configurar los distintos fragmentos que contine esta sección, si quisieramos crear otro solo tendriamos que 
 
 https://github.com/MarcCrusellas/Simplev6/blob/78a7aec93cc918d81f395a6a6230d3f63ac23af2/app/src/main/java/com/neuro/simplev6/MainActivity.java#L33-L39
@@ -97,7 +97,7 @@ https://github.com/MarcCrusellas/Simplev6/blob/4c3306db124d1ec21daaa29a16374975c
 3. I por ultimo en bottom_nav_menu.xml poner un item mas para que se vea en el Bottom Navigation Drawer. Como este:
 https://github.com/MarcCrusellas/Simplev6/blob/4c3306db124d1ec21daaa29a16374975ce6eefef/app/src/main/res/menu/bottom_nav_menu.xml#L14-L17
 
-# HomeFragment
+## HomeFragment
 
 https://github.com/MarcCrusellas/Simplev6/blob/f37d8c936d0200085ff9fb7e02f5c57c7769a306/app/src/main/java/com/neuro/simplev6/ui/home/HomeFragment.java#L25
 Este es el fragment principal de la aplicacion, contine las alarmas programadas.
@@ -108,6 +108,37 @@ https://github.com/MarcCrusellas/Simplev6/blob/f37d8c936d0200085ff9fb7e02f5c57c7
 En el HomeFragment tabien podemos ver que la opcion de eliminar una alarma solo se puede usar para eliminar una alarma con el nombre test, ya que no pude implementar la opcion de getId en el EntityClass, y no huviese dado error, solo habri sido necesario poner otro Queri en el DAO y ya habriamos podido implementar esta opcion, sin embardo si se puede eliminar directamente toda la lista, con el boton naraja. 
 eso se hace en esta seccion de codigo.
 https://github.com/MarcCrusellas/Simplev6/blob/f37d8c936d0200085ff9fb7e02f5c57c7769a306/app/src/main/java/com/neuro/simplev6/ui/home/HomeFragment.java#L108-L111
+
+## DashboardFragment
+
+Este el el segundo fragmento, principalmente es el encargado de mostrar las notas. 
+Las notas se almacenan si una base de datos, sino que se usa un SharedPreferences, que es un documento privado usado para almacenar pequeñas cuantidades de texto.
+https://github.com/MarcCrusellas/Simplev6/blob/daead811c8dfe6a83a708c9d8b8b366c21342681/app/src/main/java/com/neuro/simplev6/ui/dashboard/DashboardFragment.java#L50-L58
+Este el el codigo que uso para poner toda las lasta de notas en el ListView. Como podemos ver, quando no hay ningun elemento en la lsiata se crea uno automaticamente para que le persona separ lo que puede hacer.
+Estas son las lineas de codigo encagadas de hacer un Intent con Informació, y permiten editar una nota.
+https://github.com/MarcCrusellas/Simplev6/blob/daead811c8dfe6a83a708c9d8b8b366c21342681/app/src/main/java/com/neuro/simplev6/ui/dashboard/DashboardFragment.java#L89-L97
+
+Estas son las lineas de codigo encargar de escucha cuando un elemento de la linea esta siento presionado por mas de un momento.
+https://github.com/MarcCrusellas/Simplev6/blob/daead811c8dfe6a83a708c9d8b8b366c21342681/app/src/main/java/com/neuro/simplev6/ui/dashboard/DashboardFragment.java#L65-L88
+Estas lineas creaan un AlertDialog, que se encarga de hacer salir una pantalla encima, con dos botones, que especifican si que queremos o no eliminar la nota, si escojemos que si, eliminina del SharedPreferences este item de la Array, si por otro lado no arrepentimos poner presionar no, y no hace nada.
+
+Este trozo de codigo se encarga de hacer un Intent a una nueva activity, donde podemos crear la nota. 
+https://github.com/MarcCrusellas/Simplev6/blob/daead811c8dfe6a83a708c9d8b8b366c21342681/app/src/main/java/com/neuro/simplev6/ui/dashboard/DashboardFragment.java#L100-L110
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
