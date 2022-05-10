@@ -1,4 +1,4 @@
-# ***Simplev1***
+# ***Simplev6***
 En este sitio va haber el proceso explicado de cada version del diseño creado, cualquier tipo de cambio se agregara cada sprint.
 # Apartados
 Para tener una idea base y poder empezar a desarrollar la parte de diseño hice un mockups, el programa que se utilizo fue moqups.
@@ -6,7 +6,7 @@ Para tener una idea base y poder empezar a desarrollar la parte de diseño hice 
 ![Captura de pantalla a 2022-04-01 15-27-34](https://user-images.githubusercontent.com/95090891/161272988-09b30675-4287-4b5a-871f-4c8e550f0239.png)
 ![Captura de pantalla a 2022-04-01 15-27-53](https://user-images.githubusercontent.com/95090891/161273005-2d663585-1562-4db3-a21d-2b0c5bde4706.png)
 
-# ***Simplev2***
+
 Una vez terminado el mockups nos encargamos de pasarlo a la app y tambien se  esta intentando agreagar la version noche y dia. 
 
 # Logo
@@ -83,3 +83,8 @@ En este apartado se recreó un google maps con geolocalizador incluido donde pue
 ![Screenshot_20220429-160701_Maps](https://user-images.githubusercontent.com/95090891/166143279-a44b6d67-a149-4393-9b9a-7872939f48f6.png)
 
 
+# ***Explicación codigo6***
+# MainActivity
+este trojo de codigo es el
+
+https://github.com/MarcCrusellas/Simplev6/blob/78a7aec93cc918d81f395a6a6230d3f63ac23af2/app/src/main/java/com/neuro/simplev6/MainActivity.java#L33-L39
