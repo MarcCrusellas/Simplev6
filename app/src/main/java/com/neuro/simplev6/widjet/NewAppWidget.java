@@ -8,7 +8,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RemoteViews;
+import android.widget.RemoteViewsService;
 import android.widget.ScrollView;
 
 import com.neuro.simplev6.R;
@@ -17,8 +19,8 @@ import com.neuro.simplev6.ui.notifications.NotificationsFragment;
 /**
  * Implementation of App Widget functionality.
  */
-public class NewAppWidget extends AppWidgetProvider {
-
+public class NewAppWidget extends AppWidgetProvider  {
+    ListView listViewwirget;
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
@@ -35,6 +37,9 @@ public class NewAppWidget extends AppWidgetProvider {
 
 
         }
+        // RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.new_app_widget);
+        // remoteViews.setAdapter(getlist());;
+
     }
 
     @Override

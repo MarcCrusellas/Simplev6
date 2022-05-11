@@ -1,9 +1,13 @@
 package com.neuro.simplev6;
 
+import static com.neuro.simplev6.ui.dashboard.DashboardFragment.notes;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.PowerManager;
+import android.widget.ArrayAdapter;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -14,6 +18,9 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.neuro.simplev6.databinding.ActivityMainBinding;
+
+import java.util.ArrayList;
+import java.util.HashSet;
 
 public class MainActivity extends AppCompatActivity {
     protected PowerManager.WakeLock wakelock;
@@ -57,4 +64,21 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(icicle);
         this.wakelock.release();
     }
+
+    ArrayList<String> notes2 = new ArrayList<>();
+
+
+
+    public ArrayAdapter getlist(ArrayAdapter arrayAdapter2, Context context) {
+        SharedPreferences sharedPref = getSharedPreferences("com.neuro.simplev6", Context.MODE_PRIVATE);
+
+        HashSet<String> set2 = (HashSet<String>) sharedPref.getStringSet("notes", null);
+
+
+        notes = new ArrayList<>(set2);
+
+        arrayAdapter2 = new ArrayAdapter(context, R.layout.item_note,notes);
+        return arrayAdapter2;
+    }
+
 }
