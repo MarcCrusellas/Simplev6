@@ -8,6 +8,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toolbar;
@@ -79,5 +80,10 @@ public class NotesActivity extends AppCompatActivity {
 
             }
         });
+
+
+        // button
+        // Button submit = findViewById(R.id.submit1);
+        // submit.setOnClickListener(v -> finish());
     }
 }

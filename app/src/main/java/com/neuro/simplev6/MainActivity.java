@@ -65,20 +65,9 @@ public class MainActivity extends AppCompatActivity {
         this.wakelock.release();
     }
 
-    ArrayList<String> notes2 = new ArrayList<>();
 
 
 
-    public ArrayAdapter getlist(ArrayAdapter arrayAdapter2, Context context) {
-        SharedPreferences sharedPref = getSharedPreferences("com.neuro.simplev6", Context.MODE_PRIVATE);
 
-        HashSet<String> set2 = (HashSet<String>) sharedPref.getStringSet("notes", null);
-
-
-        notes = new ArrayList<>(set2);
-
-        arrayAdapter2 = new ArrayAdapter(context, R.layout.item_note,notes);
-        return arrayAdapter2;
-    }
 
 }

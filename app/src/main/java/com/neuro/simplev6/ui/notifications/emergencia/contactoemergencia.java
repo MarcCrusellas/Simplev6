@@ -48,11 +48,11 @@ public class contactoemergencia extends AppCompatActivity {
             getSupportActionBar().hide();
         }
         // hacer que el apartado de arriva se vea del mismo color
-        /*
+
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-         */
+
 
 
 // nombre
@@ -82,19 +82,10 @@ public class contactoemergencia extends AppCompatActivity {
 
         fotocontact= findViewById(R.id.fotocontact);
         fotocontact.setOnClickListener(v -> imageChooser());
-// foto
-        SharedPreferences fot = getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
-        String image = fot.getString("image", "null");
-/*
-        try{
-            Uri imageUri = Uri.parse(image);
-            fotocontact.setImageURI(imageUri);
-        }catch(Exception e) {
-            Log.println(Log.VERBOSE,"animal", "error");
-        }
 
 
- */
+
+
         nombre.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1,int i2) {
@@ -181,16 +172,5 @@ public class contactoemergencia extends AppCompatActivity {
             }
         }
     }
-    /*
-    public void permissionsCheck() {
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.READ_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
-            return;
-        }
-    }
 
-     */
 }

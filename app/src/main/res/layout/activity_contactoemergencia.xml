@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.AddNote.NotesActivity">
 
-    <Toolbar
+    <ImageView
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="53dp"
@@ -56,17 +56,27 @@
             app:boxCornerRadiusBottomEnd="18dp"
             app:boxCornerRadiusBottomStart="18dp"
             app:boxCornerRadiusTopEnd="18dp"
-            app:boxCornerRadiusTopStart="18dp">
+            app:boxCornerRadiusTopStart="18dp"
+            >
 
             <EditText
                 android:id="@+id/nombre"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorPrimaryDark"
                 android:hint="Name"
 
                 android:fontFamily="@font/b022014t"
-                android:inputType="textPersonName" />
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+
+                android:inputType="textMultiLine"
+                android:textColorHighlight="@color/purple_500"
+                android:textSize="20sp"
+                android:autofillHints="Hola"/>
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -85,7 +95,6 @@
                 android:id="@+id/telefono"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorPrimaryDark"
                 android:hint="Teléfono"
                 android:fontFamily="@font/b022014t"
                 android:inputType="number" />
@@ -93,6 +102,7 @@
 
 
         <Button
+            android:id="@+id/submit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

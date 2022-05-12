@@ -20,7 +20,7 @@ import com.neuro.simplev6.ui.notifications.NotificationsFragment;
  * Implementation of App Widget functionality.
  */
 public class NewAppWidget extends AppWidgetProvider  {
-    ListView listViewwirget;
+    // ListView listViewwirget;
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {

@@ -4,6 +4,7 @@ import static com.neuro.simplev6.ui.notifications.NotificationsFragment.contact;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,6 +12,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -33,11 +38,11 @@ public class contactoemergencia2 extends AppCompatActivity {
             getSupportActionBar().hide();
         }
         // hacer que el apartado de arriva se vea del mismo color
-        /*
+
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-         */
+
 
 
 // nombre
@@ -67,19 +72,10 @@ public class contactoemergencia2 extends AppCompatActivity {
 
         fotocontact= findViewById(R.id.fotocontact);
         fotocontact.setOnClickListener(v -> imageChooser());
-// foto
-        SharedPreferences fot = getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
-        String image = fot.getString("image", "null");
-/*
-        try{
-            Uri imageUri = Uri.parse(image);
-            fotocontact.setImageURI(imageUri);
-        }catch(Exception e) {
-            Log.println(Log.VERBOSE,"animal", "error");
-        }
 
 
- */
+
+
         nombre.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1,int i2) {
@@ -121,6 +117,8 @@ public class contactoemergencia2 extends AppCompatActivity {
 
             }
         });
+
+
 
     }
 
@@ -166,16 +164,7 @@ public class contactoemergencia2 extends AppCompatActivity {
             }
         }
     }
-    /*
-    public void permissionsCheck() {
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.READ_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
-            return;
-        }
-    }
 
-     */
+
+
 }
