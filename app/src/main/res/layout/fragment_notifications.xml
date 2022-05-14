@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.notifications.NotificationsFragment">
+    tools:context=".ui.notifications.NotificationsFragment"
+
+    android:paddingTop="8dp"
+    android:orientation="vertical">
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -14,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <HorizontalScrollView
-            android:layout_width="183dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -37,7 +40,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardView"
-                android:layout_width="183dp"
+                android:layout_width="180dp"
                 android:layout_height="247dp"
                 app:cardBackgroundColor="@color/light_blue_900"
                 app:cardCornerRadius="20dp"
@@ -74,7 +77,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardView2"
-                android:layout_width="183dp"
+                android:layout_width="180dp"
                 android:layout_height="247dp"
                 app:cardBackgroundColor="#077EDC"
                 app:cardCornerRadius="20dp"
@@ -111,7 +114,7 @@
     </HorizontalScrollView>
 
         <HorizontalScrollView
-            android:layout_width="183dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:id="@+id/scrollView2"
             android:scrollbarThumbHorizontal="@drawable/custom_scroll_style"
@@ -130,7 +133,7 @@
                 >
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardView5"
-                android:layout_width="183dp"
+                android:layout_width="180dp"
                 android:layout_height="247dp"
                 app:cardBackgroundColor="@color/light_blue_900"
                 app:cardCornerRadius="20dp"
@@ -169,7 +172,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardView6"
-                android:layout_width="183dp"
+                android:layout_width="180dp"
                 android:layout_height="247dp"
                 app:cardBackgroundColor="#077EDC"
                 app:cardCornerRadius="20dp"
@@ -211,76 +214,82 @@
 
 
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
+        android:gravity="center|top"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:orientation="vertical"
+        >
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardView3"
-            android:layout_width="136dp"
-            android:layout_height="247dp"
-            app:cardBackgroundColor="@color/light_blue_900"
+            android:id="@+id/maps"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="#077EDC"
             app:cardCornerRadius="20dp"
             app:cardElevation="10dp"
             app:cardMaxElevation="12dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true"
-            app:layout_constraintTop_toBottomOf="@+id/cardView"
-            tools:layout_editor_absoluteX="16dp">
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="325dp">
 
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/img3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="top|center"
-                android:layout_margin="10dp"
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
 
-                android:backgroundTint="#00FFFFFF"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_baseline_change_circle_24_2" />
-
-            <TextView
-                android:id="@+id/txttelmergencia"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="Escoje"
-                android:textColor="@color/colorPrimary"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
 
         </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardView4"
-            android:layout_width="wrap_content"
-            android:layout_height="247dp"
-            android:padding="20dp"
-            app:cardBackgroundColor="@color/light_blue_900"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="10dp"
-            app:cardMaxElevation="6dp"
-            app:cardPreventCornerOverlap="true"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintTop_toBottomOf="@+id/cardView"
-            tools:layout_editor_absoluteX="16dp">
 
-            <ListView
-                android:id="@+id/listViewcard"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="15dp"
-                android:backgroundTint="@color/white" />
 
-        </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/calle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:autofillHints="Calle y numero"
+                        android:ems="10"
+                        android:fontFamily="@font/b022014t"
+
+                        android:text="Ubicacion"
+
+                        android:textColorHighlight="@color/purple_500"
+                        android:textSize="20sp"
+                        android:padding="20dp"
+                        android:background="@drawable/rounded_corner"/>
+
+
+
+
+
+
+
+
+
+
+
+
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/buttonmap"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fonswidjet"
+
+        android:fontFamily="@font/latoblack"
+        android:hint="Ir a Maps"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

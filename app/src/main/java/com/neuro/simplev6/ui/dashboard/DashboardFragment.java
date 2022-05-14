@@ -51,7 +51,7 @@ public class DashboardFragment extends Fragment {
 
         HashSet<String> set = (HashSet<String>) sharedPref.getStringSet("notes", null);
         if (set == null){
-            notes.add("escrive aqui");
+            notes.add("escribe aqui");
         } else {
             notes = new ArrayList<>(set);
         }
@@ -104,7 +104,7 @@ public class DashboardFragment extends Fragment {
                 Toast.makeText(getActivity(), "Accediendo a \n Añadir notas", Toast.LENGTH_LONG).show();
                 Intent intent2 = new Intent(getContext(), NotesActivity.class);
                 startActivity(intent2);
-                // notes.add("escrive aqui");
+                // notes.add("escribe aqui");
                 // ((BaseAdapter) listView.getAdapter()).notifyDataSetChanged();
             }
         });

@@ -1,15 +1,9 @@
 package com.neuro.simplev6;
 
-import static com.neuro.simplev6.ui.dashboard.DashboardFragment.notes;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.PowerManager;
-import android.widget.ArrayAdapter;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -17,10 +11,8 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.neuro.simplev6.databinding.ActivityMainBinding;
-
-import java.util.ArrayList;
-import java.util.HashSet;
 
 public class MainActivity extends AppCompatActivity {
     protected PowerManager.WakeLock wakelock;
@@ -41,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        // NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         NavigationUI.setupWithNavController(binding.navView, navController);
 
 //evitar que la pantalla se apague

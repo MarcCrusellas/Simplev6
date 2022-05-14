@@ -97,7 +97,12 @@
                 android:layout_height="wrap_content"
                 android:hint="Teléfono"
                 android:fontFamily="@font/b022014t"
-                android:inputType="number" />
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"/>
         </com.google.android.material.textfield.TextInputLayout>
 
 
