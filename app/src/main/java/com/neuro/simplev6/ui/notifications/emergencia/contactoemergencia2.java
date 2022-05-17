@@ -31,7 +31,7 @@ public class contactoemergencia2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contactoemergencia);
+        setContentView(R.layout.activity_contactoemergencia2);
         // permissionsCheck();
         // eliminar toolbar
         if (getSupportActionBar() != null) {
@@ -118,8 +118,15 @@ public class contactoemergencia2 extends AppCompatActivity {
             }
         });
 
+        Button submit = findViewById(R.id.submit);
+        submit.setOnClickListener(v -> {
+            endall();
+        });
 
+    }
 
+    private void endall() {
+        finish();
     }
 
     void imageChooser() {

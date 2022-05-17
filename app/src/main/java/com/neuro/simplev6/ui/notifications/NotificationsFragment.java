@@ -45,7 +45,7 @@ public class NotificationsFragment extends Fragment {
     private GoogleMap mMap;
     public static ArrayList<String> contact = new ArrayList<>();
     Fragment map;
-
+    SharedPreferences sp;
 
 
 
@@ -90,18 +90,11 @@ public class NotificationsFragment extends Fragment {
             }, 2750); // 250 ms delay
         }
 
-
-
-
-
-
-
 // conacto 1
         // nombre
-        SharedPreferences name = requireContext().getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
-        String nom = name.getString("nom", "Contacto");
+        sp = requireContext().getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
+        String nom = sp.getString("nom", "Contacto");
         // telefono
-        SharedPreferences sp = requireContext().getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
         tel = sp.getString("tel", "");
 
 
@@ -130,11 +123,9 @@ public class NotificationsFragment extends Fragment {
 
 // conacto 2
         // nombre
-        SharedPreferences name2 = requireContext().getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
-        String nom2 = name2.getString("nom2", "Contacto");
+        String nom2 = sp.getString("nom2", "Contacto");
         // telefono
-        SharedPreferences sp5 = requireContext().getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
-        tel2 = sp5.getString("tel2", "");
+        tel2 = sp.getString("tel2", "");
 
 
 
@@ -188,8 +179,7 @@ public class NotificationsFragment extends Fragment {
 
             final EditText input = new EditText(getContext());
 
-            SharedPreferences sp6 = getContext().getSharedPreferences("com.neuro.simplev6", Activity.MODE_PRIVATE);
-            String calle1 = sp6.getString("calle", "");
+            String calle1 = sp.getString("calle", "");
             input.setText(calle1);
 
             input.setInputType(InputType.TYPE_CLASS_TEXT);
@@ -202,12 +192,10 @@ public class NotificationsFragment extends Fragment {
                 public void onClick(DialogInterface dialog, int whichButton) {
 
                     String nombreput = input.getText().toString();
-                    SharedPreferences sp = getContext().getSharedPreferences("com.neuro.simplev6", Activity.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sp.edit();
                     editor.putString("calle", nombreput);
                     editor.commit();
-                    SharedPreferences sp6 = getContext().getSharedPreferences("com.neuro.simplev6", Activity.MODE_PRIVATE);
-                    String calle1 = sp6.getString("calle", "");
+                    String calle1 = sp.getString("calle", "");
                     calle.setText(calle1);
                 }
             });
@@ -221,18 +209,9 @@ public class NotificationsFragment extends Fragment {
                     });
             AlertDialog alert = builder.create();
             alert.show();
-            /*
-                String nombreput = calle.getText().toString();
-                SharedPreferences sp = getContext().getSharedPreferences("com.neuro.simplev6", Activity.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sp.edit();
-                editor.putString("calle", nombreput);
-                editor.commit();
-
-             */
 
         });
-        SharedPreferences sp6 = getContext().getSharedPreferences("com.neuro.simplev6", Activity.MODE_PRIVATE);
-        String calle1 = sp6.getString("calle", "");
+        String calle1 = sp.getString("calle", "");
         calle.setText(calle1);
 
         return root;
@@ -283,29 +262,18 @@ public class NotificationsFragment extends Fragment {
         } else if (i == 3) {
             // calle
 
-            SharedPreferences sp = getContext().getSharedPreferences("com.neuro.simplev6", Activity.MODE_PRIVATE);
             String calle1 = sp.getString("calle", "");
             if (calle1.equals("")){
                 return;
             }
-
 
 // Create an Intent from gmmIntentUri. Set the action to ACTION_VIEW
             Intent mapIntent = new Intent(Intent.ACTION_VIEW,  Uri.parse("google.navigation:q="+calle1));
 // Make the Intent explicit by setting the Google Maps package
             mapIntent.setPackage("com.google.android.apps.maps");
 
-
 // Attempt to start an activity that can handle the Intent
             startActivity(mapIntent);
-
-
-
-
-
-
-
-
 
         }
     }
@@ -321,28 +289,16 @@ public class NotificationsFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
-        SharedPreferences name = getContext().getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
-        String nom = name.getString("nom", "Contacto");
+        String nom = sp.getString("nom", "Contacto");
         contactotext.setText(nom);
 
-        SharedPreferences sp = getContext().getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
         tel = sp.getString("tel", "");
 
-
         // contacto 2
-        SharedPreferences name2 = getContext().getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
-        String nom2 = name2.getString("nom2", "Contacto");
+        String nom2 = sp.getString("nom2", "Contacto");
         contactotext2.setText(nom2);
 
-        SharedPreferences sp2 = getContext().getSharedPreferences("com.neuro.simplev6", MODE_PRIVATE);
-        tel2 = sp2.getString("tel2", "");
-
-
+        tel2 = sp.getString("tel2", "");
     }
-
-
-    // Check whether user has phone contacts manipulation permission or not.
-
-
 
 }

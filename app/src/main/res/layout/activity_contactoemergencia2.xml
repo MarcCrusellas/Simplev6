@@ -107,20 +107,20 @@
 
 
             <Button
-                android:id="@+id/submit2"
+                android:id="@+id/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="20dp"
-                android:background="@color/colorPrimaryDark"
                 android:elevation="4dp"
-
                 android:paddingLeft="70dp"
                 android:paddingRight="70dp"
-
-                android:text="Submit"
-                android:textColor="#fff" />
+                android:text="Cerra"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:background="@drawable/round"/>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout >

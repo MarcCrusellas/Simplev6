@@ -3,22 +3,14 @@ package com.neuro.simplev6.ui.notifications.emergencia;
 import static com.neuro.simplev6.ui.notifications.NotificationsFragment.contact;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
-import android.Manifest;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -26,10 +18,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.neuro.simplev6.R;
-import com.neuro.simplev6.ui.dashboard.DashboardFragment;
-
-import java.util.ArrayList;
-import java.util.HashSet;
 
 public class contactoemergencia extends AppCompatActivity {
 
@@ -38,6 +26,7 @@ public class contactoemergencia extends AppCompatActivity {
     int PICK_IMAGE_REQUEST = 200;
     private ImageView fotocontact;
     private Uri mImageUri;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,6 +117,12 @@ public class contactoemergencia extends AppCompatActivity {
             }
         });
 
+
+        Button submit = findViewById(R.id.submit);
+        submit.setOnClickListener(v -> {
+            endall();
+        });
+
     }
 
     void imageChooser() {
@@ -172,5 +167,10 @@ public class contactoemergencia extends AppCompatActivity {
             }
         }
     }
+
+    public void endall(){
+        finish();
+    }
+
 
 }
