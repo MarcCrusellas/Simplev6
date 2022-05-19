@@ -41,7 +41,7 @@ public class AlarmBrodcast extends BroadcastReceiver {
         RemoteViews contentView = new RemoteViews(context.getPackageName(), R.layout.notification_layout);
         contentView.setImageViewResource(com.google.android.gms.base.R.id.icon_only, R.mipmap.ic_launcher_round);
         PendingIntent pendingSwitchIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
-        // contentView.setOnClickPendingIntent(R.id.flashButton, pendingSwitchIntent);
+        contentView.setOnClickPendingIntent(R.id.icon, pendingSwitchIntent);
         contentView.setTextViewText(R.id.message, text);
         contentView.setTextViewText(R.id.date, date);
         mBuilder.setSmallIcon(R.mipmap.ic_launcher_foreground);
@@ -49,6 +49,7 @@ public class AlarmBrodcast extends BroadcastReceiver {
         mBuilder.setOngoing(true);
         mBuilder.setPriority(Notification.PRIORITY_HIGH);
         // Posar vibració
+        /*
         mBuilder.setOnlyAlertOnce(true);
         long[] pattern = {500,500,500,500,500,500,500,500,500};
         mBuilder.setVibrate(pattern);
@@ -56,6 +57,8 @@ public class AlarmBrodcast extends BroadcastReceiver {
 
         Uri alarmTone = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
         mBuilder.setSound(alarmTone, STREAM_ALARM);
+
+         */
         mBuilder.build().flags = Notification.FLAG_NO_CLEAR | Notification.PRIORITY_HIGH;
         mBuilder.setContent(contentView);
         mBuilder.setContentIntent(pendingIntent);

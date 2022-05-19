@@ -42,9 +42,9 @@ public class NotificationsFragment extends Fragment {
     CardView cardView, cardView2, cardView5, cardView6, maps;
     TextView contactotext, contactotext2;
     String tel, tel2;
-    private GoogleMap mMap;
+
     public static ArrayList<String> contact = new ArrayList<>();
-    Fragment map;
+
     SharedPreferences sp;
 
 
@@ -175,7 +175,7 @@ public class NotificationsFragment extends Fragment {
 
         calle.setOnClickListener(v ->  {
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-            builder.setTitle("Comment");
+            builder.setTitle("¿Qué ubicación quieres guardar?");
 
             final EditText input = new EditText(getContext());
 

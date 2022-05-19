@@ -269,17 +269,6 @@
                         android:padding="20dp"
                         android:background="@drawable/rounded_corner"/>
 
-
-
-
-
-
-
-
-
-
-
-
     </LinearLayout>
     <Button
         android:id="@+id/buttonmap"
