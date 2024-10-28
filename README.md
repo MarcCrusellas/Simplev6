@@ -1,5 +1,4 @@
 # ***Simplev6***
-En este sitio va a haber el proceso explicado de cada versión del diseño creado, cualquier tipo de cambio se agregará en cada sprint.
 
 **Table of Contents**
 
